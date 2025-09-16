@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1>Página Web de tienda</h1>
+      <nav>
+        <a href = "index.html">Inicio</a>
+        <a href = "carrito.html">Carrito</a>
+        <a href = "login.html">Log In</a>
+        <a href = "admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="container user">
+      <h2>Crea un usuario y contraseña</h2>
+        <form id="form-username" class="grid">
+          <input type = "text" id = "usernamesign" placeholder = "Nombre de Usuario..." required>
+          <input type = "password" id = "passwordsign" placeholder = "Contraseña..." required>
+          <button type = "submit">Registrarse</button>
+        </form>
+
+        <p id="msg" class="muted"></p>
+    </main>
+
+    <script src="./js/signin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Página Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header class="container">
+      <h1>Página Web de tienda</h1>
+      <nav>
+        <a href = "index.html">Inicio</a>
+        <a href = "carrito.html">Carrito</a>
+        <a href = "login.html" class = "active">Log In</a>
+        <a href = "admin.html">Admin</a>
+      </nav>
+    </header>
+
+    <main class="container user">
+      <h2>Ingrese correo y contraseña</h2>
+      <div class="actions" id="principal">
+        <form class="grid">
+          <input type = "text" id = "userlog" placeholder = "Nombre de Usuario..." required>
+          <input type = "password" id = "passlog" placeholder = "Contraseña..." required>
+          <button type = "submit" id="btn-logear">Ingresar</button>
+        </form>
+
+        <section class="small">
+          <h4>¿No tienes cuenta?</h4>
+          <h4>Puedes crear una cuenta <a href="signin.html">aquí</a></h4>
+        </section>
+      </div>
+
+      <div class="notice" id="fallo-logear" hidden>
+        No existe usuario guardado, registrese para poder logearse
+      </div>
+
+      <div class="notice" id="logeado-exito" hidden>
+        Logeado con Exito, seras redirigido a la página principal
+      </div>
+    </main>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>
